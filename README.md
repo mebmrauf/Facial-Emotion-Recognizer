@@ -111,20 +111,13 @@ predict_single_image(
 
 There’s also a small `gdown` example that downloads an image and runs prediction.
 
-## Example results (from the provided runs)
+## Results
 - Average test accuracy on FER2013 is around ~67%
 - Strong classes: Happy (~85%), Surprise (~80%)
 - Tough classes: Fear (~43%)
 - Common confusions: Fear→Sad (~22%), Disgust→Anger (~19%), Sad↔Neutral (~17%)
 
 Results will vary with hardware, random seed, and exact dataset splits.
-
-## Tips to improve
-- Add channel attention or SE blocks alongside spatial attention
-- Use stronger backbones (e.g., ResNet50, EfficientNet) or vision transformers
-- Try focal loss for hard examples
-- Balance classes via sampling or mixup/augment policies
-- Add face alignment or cropping with a detector before classification
 
 ## Requirements
 - Python 3.9+
